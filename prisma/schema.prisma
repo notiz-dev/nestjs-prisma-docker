@@ -9,3 +9,8 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+model Food {
+  id   Int    @id @default(autoincrement())
+  name String
+}
