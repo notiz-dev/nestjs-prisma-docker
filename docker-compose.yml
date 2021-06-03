@@ -1,10 +1,11 @@
-version: '3.7'
+version: '3.8'
 services:
   nest-api:
-    container_name: nest-api
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: nest-api 
+    restart: always
     ports:
       - 3000:3000
     depends_on:
@@ -13,7 +14,7 @@ services:
       - .env
 
   postgres:
-    image: postgres:12
+    image: postgres:13
     container_name: postgresprisma
     restart: always
     ports:
@@ -25,4 +26,4 @@ services:
 
 volumes:
   postgres:
-    name: nest-db
+    name: nest-prisma-docker-db

@@ -7,6 +7,8 @@ Develop the Nest application
 ```bash
 npm install
 
+cp .env.example .env
+
 npx prisma generate
 
 npm run start:dev
@@ -19,7 +21,7 @@ Get started by running
 ```bash
 docker build -t nest-api .
 
-docker run -p 3000:3000 --env-file prisma/.env -d nest-api
+docker run -p 3000:3000 --env-file .env -d nest-api
 ```
 
 ## Docker Compose
