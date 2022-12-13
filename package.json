@@ -30,7 +30,7 @@
   "dependencies": {
     "@nestjs/common": "^8.2.0",
     "@nestjs/core": "^8.2.0",
-    "@nestjs/platform-express": "^8.2.0",
+    "@nestjs/platform-express": "^8.4.7",
     "@prisma/client": "~3.4.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
